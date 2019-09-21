@@ -86,3 +86,9 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# IDEA
+.idea
+
+# gcloud
+.gcloudignore
