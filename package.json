@@ -1,0 +1,27 @@
+{
+  "name": "cloudbuild-notify",
+  "version": "1.0.0",
+  "description": "Notify services about the status of the Cloud Build pipeline",
+  "main": "index.js",
+  "scripts": {
+    "gcp-deploy": "gcloud functions deploy cloudbuildNotify --runtime nodejs8 --memory 128 --timeout 30 --region europe-west1 --trigger-topic cloud-builds --set-env-vars SERVICES=#;#;#,GITHUB_TOKEN=#,PUSHOVER_API_TOKEN=#,PUSHOVER_USER_TOKEN=#"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxRobinSchaefer/cloudbuild-notify.git"
+  },
+  "keywords": [
+    "gcp",
+    "cloudbuild"
+  ],
+  "author": "Max Schäfer <contact@maxrs.de>",
+  "license": "SEE LICENSE IN <LICENSE.md>",
+  "bugs": {
+    "url": "https://github.com/MaxRobinSchaefer/cloudbuild-notify/issues"
+  },
+  "homepage": "https://github.com/MaxRobinSchaefer/cloudbuild-notify#readme",
+  "dependencies": {
+    "github-build": "^1.2.1",
+    "pushover-notifications": "^1.2.0"
+  }
+}
