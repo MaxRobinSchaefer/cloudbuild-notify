@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/MaxRobinSchaefer/cloudbuild-notify#readme",
   "dependencies": {
-    "github-build": "^1.2.1",
+    "github-build": "^1.2.3",
     "pushover-notifications": "^1.2.0"
   }
 }
